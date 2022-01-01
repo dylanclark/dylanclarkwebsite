@@ -2,17 +2,17 @@
 
 /* Color scheme */
 
---textcolor: #121212;
---bgcolor: #fff;
---highlight: #2749c9;
+--textcolor: #dadada;
+--bgcolor: #041c32;
+--highlight: #ecb365;
 
 }
 
 @media (prefers-color-scheme: dark) {
 * {
 --textcolor: #dadada;
---bgcolor: #141414;
---highlight: #ffc400;
+--bgcolor: #041c32;
+--highlight: #ecb365;
 }
 }
 

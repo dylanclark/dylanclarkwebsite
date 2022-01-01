@@ -1,4 +1,4 @@
-<!-- JOHN DOE’S PAGE - https://github.com/cadars/john-doe/ -->
+<!-- Hi, this is a really simple website infrastructure I copied and modified from JOHN DOE’S PAGE - https://github.com/cadars/john-doe/ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,14 +7,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Site title</title>
-    <meta name="description" content="Site description">
+    <title>Dylan Clark's Website</title>
+    <meta name="description" content="Personal website for Dylan Clark">
 
     <!-- Recommended minimum -->
-    <meta property="og:title" content="Site title">
-    <meta property="og:description" content="Site description">
-    <meta property="og:image" content="img/site-image.jpg">
+    <meta property="og:title" content="Dylan Clark's Website">
+    <meta property="og:description" content="Personal website for Dylan Clark">
+    <meta property="og:image" content="img/favicon/favicon-32x32.png">
+
+    <!-- Tweeter -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@DylanMClark">
+    <meta name="twitter:creator" content="@DylanMClark">
+    <meta name="twitter:title" content="Dylan Clark's Website">
+    <meta name="twitter:description" content="Personal website for Dylan Clark.">
 
     <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -25,13 +31,12 @@
 
     <header>
         <h1>
-            <a href="#home">Site title</a>
+            <a href="#home">Dylan Clark</a>
         </h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#news">News</a>
-            <a href="#photos">Photos</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#thissite">About this site</a>
         </nav>
     </header>
 
@@ -40,13 +45,119 @@
         <section id="home">
             <!-- HOME -->
 
-            <p>This is the homepage, displayed by default.</p>
+            <p>
+                Hi there, I'm Dylan Clark. I'm a Software Engineer based in Seattle, WA and working at Microsoft.
+            </p>
+
+            <b>Background</b>
+
+            <p>
+                I have a degree in Computer Science and have been developing Enterprise software with modern C++ for 5
+                years. I now know too much C++ to call myself an 'expert', but I'm really good at writing sustainable,
+                testable, and modularized C++ libraries and applications.
+
+                <br><br>
+
+                I'm also a good writer, communicator, and team leader. Before getting into programming, I was the
+                Editor-In-Chief of my high school's CSPA Gold Crown-winning newspaper and of a magazine in college.
+            </p>
+
+            <b>Work</b>
+
+            <p>
+                After graduating from college, I began work on the win32 version of Outlook. I now work on a framework
+                team within the Outlook organization. In both positions I've been primarily working C++. I also have
+                experience with build systems engineering and project health engineering. I'm interested in lower-level,
+                backend, and framework development, though I also have enterprise experience working in a
+                Typescript/React project (Outlook.com).
+            </p>
+
+            <b>Relevant Experience and Interests</b>
+
+            <p>
+                There is more exhaustive information on my skills and experience on LinkedIn and my resume, and I'm
+                happy to share more with anyone who is curious (<a href="#contact">contact me.</a>), but
+                here are the high notes:
+            </p>
+
+            <ul>
+                <li>Modern C++ (17/20)</li>
+                <li>Build systems with modern CMake</li>
+                <li>CI and Release Management (Azure Devops / Powershell / Yaml / etc.)</li>
+                <li>Comfort with C#/.NET</li>
+                <li>Comfort with Typescript, ReactJS, and Satchel</li>
+            </ul>
 
         </section>
 
-        <section id="about">
-            <!-- ABOUT -->
+        <section id="contact">
+            <h2>
+                <p><b>Email: </b> dylanmclark at outlook dot com</p>
+                <p><a href="https://www.linkedin.com/in/dylan-mcdaniel-clark/">LinkedIn</a></p>
+                <p><a href="https://www.goodreads.com/user/show/31349355-dylan-clark">Goodreads</a></p>
+                <p><a href="https://www.twitter.com/DylanMClark">Twitter</a></p>
+                <p><a href="https://www.github.com/dylanclark">GitHub</a></p>
+            </h2>
+        </section>
 
+        <section id="thissite">
+            <h1>About this site</h1>
+
+            <p>
+                <b>TL;DR: I use <a href="https://github.com/cadars/john-doe">this repo</a> as a framework and Netlify to
+                    host.</b>
+            </p>
+
+            <h2>Background</h2>
+
+            <p>
+                At the risk of writing too much fluff and sounding like a recipe website, I figured some of this info
+                would be good
+                to share for anyone who's curious to create their own personal site.
+            </p>
+
+            <p>
+                I have spent a few years trying to nail down the right configuration for for a personal website. I've
+                gone through a few tools, finding some too expensive (this one is free) and some too complicated
+                (React for a personal site...).
+            </p>
+            <p>I love web1.0: simple, fast, javascript-free websites without a care in the world for SEO or the like.
+                I'm tired of the modern internet where simple websites require social sign-on and I can't pay rent
+                without opening some form of Chromium.
+            </p>
+
+            <p>
+                I came across <a href="https://john-doe.neocities.org/">this sample site for 'John Doe'</a> that is
+                implemented in a single HTML file with a CSS stylesheet and knew it's what I wanted for myself. It has
+                no scripts and no dependencies, I can edit it with any text editor, and it's <b>fast</b>. The github
+                repo I used as a template is <a href="https://github.com/cadars/john-doe">here</a>.
+            </p>
+
+            <p>
+                My repo for the site is <a href="https://github.com/dylanclark/dylanclarkwebsite">here</a>. I've changed
+                some colors (and the content obviously) but otherwise used only what came with the template.
+            </p>
+
+            <p> I then found the Netlify free tier to be an excellent hosting/deployment/DNS service. It's linked to the
+                GitHub repo, so a simple 'git push' to the master branch of my repo and the new edits are live!</p>
+
+            <h2>Steps to deploy your own site</h2>
+
+            <ul>
+                <li>Fork or copy the template from github (<a
+                        href="https://github.com/cadars/john-doe">https://github.com/cadars/john-doe</a>)</li>
+                <li>Edit the HTML and CSS as you see fit</li>
+                <li>Create a free Netlify account <a href="https://app.netlify.com/signup">here</a></li>
+                <li>Link your Netlify and GitHub accounts (<a
+                        href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/">instructions
+                        here</a>)</li>
+                <li>[optional] Connect any custom domain to netlify (<a
+                        href="https://docs.netlify.com/domains-https/custom-domains/">instructions here</a>)</li>
+                <li>git commit -am "my website is done!"</li>
+                <li>git push</li>
+            </ul>
+        </section>
+        <!-- <section id="about">
             <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
 
             <figure>
@@ -59,7 +170,6 @@
         </section>
 
         <section id="news">
-            <!-- NEWS -->
 
             <article>
                 <h2>Blogging with Joe Bloggs <time datetime="2020-10-10">10.10.2020</time></h2>
@@ -82,11 +192,8 @@
         </section>
 
         <section id="photos">
-            <!-- PHOTOS -->
 
             <p>An example of a photo gallery with a lightbox.</p>
-
-            <!-- You can use this grid of images in any page -->
 
             <div class="grid">
                 <a href="#img-01"><img loading="lazy" alt="" src="//dummyimage.com/300x300/ddd/bbb"></a>
@@ -109,7 +216,6 @@
         </section>
 
         <section id="portfolio">
-            <!-- PORTFOLIO -->
 
             <div class="slides">
                 <figure><img loading="lazy" alt="" src="//dummyimage.com/4000x3000/ddd/bbb"></figure>
@@ -136,13 +242,12 @@
         </section>
 
         <section id="another-page">
-            <!-- ANOTHER PAGE -->
 
             <p>This page is not referenced in the menu, yet it exists.</p>
             <p><a href="#about">← back</a></p>
 
         </section>
-
+    -->
     </main>
 
     <!-- ----------
@@ -151,6 +256,7 @@
 
     <!-- PHOTOS grid -->
 
+    <!--
     <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt=""
             src="//dummyimage.com/3000x3000/ddd/bbb"></a>
     <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt=""
@@ -182,11 +288,9 @@
     <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt=""
             src="//dummyimage.com/3000x4000/ddd/bbb"></a>
 
-    <!-- Other images -->
-
     <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt=""
             src="//dummyimage.com/2400x1200/ddd/bbb"></a>
-
+    -->
 </body>
 
 </html>
