@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>Dylan Clark's Website</title>
-    <meta name="description" content="Personal website for Dylan Clark">
+    <meta name="description" content="Dylan Clark is a principal software engineer in Cambridge, MA, building backend services, shared frameworks, and AI developer tools.">
 
     <!-- Recommended minimum -->
     <meta property="og:title" content="Dylan Clark's Website">
-    <meta property="og:description" content="Personal website for Dylan Clark">
+    <meta property="og:description" content="Dylan Clark is a principal software engineer in Cambridge, MA, building backend services, shared frameworks, and AI developer tools.">
     <meta property="og:image" content="img/favicon/favicon-32x32.png">
 
     <!-- Tweeter -->
@@ -20,7 +20,7 @@
     <meta name="twitter:site" content="@DylanMClark">
     <meta name="twitter:creator" content="@DylanMClark">
     <meta name="twitter:title" content="Dylan Clark's Website">
-    <meta name="twitter:description" content="Personal website for Dylan Clark.">
+    <meta name="twitter:description" content="Dylan Clark is a principal software engineer in Cambridge, MA, building backend services, shared frameworks, and AI developer tools.">
 
     <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -36,64 +36,79 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#contact">Contact</a>
-            <a href="#thissite">About this site</a>
         </nav>
     </header>
 
     <main>
 
         <section id="home">
-            <!-- HOME -->
+            <p>
+                Hi, I'm Dylan Clark. I'm a Principal Software Engineer at Microsoft, based in Cambridge, MA.
+                I build backend services, shared frameworks, and developer tools. I like taking a problem
+                that isn't quite figured out yet and getting something useful into people's hands.
+            </p>
+
+            <b>What I'm building</b>
 
             <p>
-                Hi, I'm Dylan Clark. I'm a Software Engineer based in Cambridge, MA.
-            </p>
-
-            <b>Background</b>
-
-            <p>
-                I studied Computer Science in college and have been developing enterprise software with modern C++ for 6
-                years. I enjoy writing sustainable, testable, and modularized backends and frameworks.
-            </p>
-
-            <p>
-                I pride myself on being a thoughtful communicator and determined problem solver. These traits have 
-                helped me grow as a both software engineer and a teammate. I thrive in an environment where I am 
-                continuously learning and being challenged.
-            </p>
-
-            <b>Work</b>
-
-            <p>
-                After college, I began work at Microsoft on the win32 version of Outlook. I'm now part of an infrastructure team within
-                the Outlook organization. We're building a native framework for applications that leverage WebView2.
+                I build services for agentic Outlook experiences, taking them from an idea to worldwide
+                deployment. As I build, I develop tooling and focus on capacity, monitoring, and evaluations
+                to make sure the software works well as it grows. I like carrying an idea through that whole
+                process, including the work it takes to make it dependable in production.
             </p>
             <p>
-                In both positions, I've been primarily working C++ for application code. Additionally, I help lead build systems engineering
-                efforts and focusing on developer experience.
-            </p>
-            <p> 
-                I'm interested in lower-level, backend, and framework development, though I could probably throw together 
-                a frontend if I needed to as I've worked a bit on a enterprise-scale Typescript/React application: outlook.com.
+                AI is also part of how I build. I develop tools and agentic workflows with a focus on
+                developer experience and reliability, including automating the generation of compliance
+                artifacts. I like finding the repeated friction in a team's day and building something
+                that gets it out of the way.
             </p>
 
-            <b>Relevant Experience and Interests</b>
+            <b>How I got here</b>
 
             <p>
-                There is more exhaustive information on my skills and experience on LinkedIn and my resume, and I'm
-                happy to share more with anyone who is curious (<a href="#contact">contact me.</a>). Here are the 
-                notes:
+                I joined Microsoft after graduating from Harvard in 2018 and started in desktop Outlook,
+                working in C++. Since then, I've helped build a shared WebView2 application hosting framework
+                used by Outlook, Copilot, OneDrive, and other Microsoft products. That meant designing APIs
+                and writing code, working directly with adopting teams, and making it easier for them to
+                debug and contribute improvements.
             </p>
+            <p>
+                Some of the most useful work has meant getting into someone else's system. When an Outlook
+                integration depended on a service with missing technical context, I learned the codebase,
+                tracked down its history, and worked with the owning team to implement the changes.
+                I've also spent years on the work that keeps releases dependable: build systems, staged
+                rollouts, telemetry, and figuring out why an update didn't do what we expected.
+            </p>
+
+            <b>How I work</b>
+
+            <p>
+                I'm a generalist with a particular fondness for backends, frameworks, and developer tools.
+                Give me a fuzzy problem, a few people with different priorities, and something useful to build,
+                and I'm happy. I like getting enough context to make a decision, testing the risky assumptions,
+                and getting a first version into people's hands so we can learn from it.
+            </p>
+            <p>
+                Sometimes that means leading a cross-team effort; sometimes it means pairing with someone
+                or digging into an unfamiliar service myself. I care about being a patient, useful teammate.
+                Mentoring engineers and helping them take ownership of bigger problems has become one of
+                my favorite parts of the job.
+            </p>
+
+            <b>Tools and interests</b>
 
             <ul>
-                <li>Modern C++</li>
-                <li>Build systems with modern CMake</li>
-                <li>CI and Release Management (Azure Devops / Github Actions / Yaml / all the other fun tools that get thrown together to ship code)</li>
-                <li>C#/.NET</li>
-                <li>Comfort with Typescript, ReactJS</li>
-                <li>Comfort with Rust</li>
+                <li>C#/.NET and modern C++; TypeScript, React, and Python when the work takes me there</li>
+                <li>MCP, coding agents, and developer experience for AI</li>
+                <li>Azure services, Docker, Kubernetes-based infrastructure, and infrastructure as code</li>
+                <li>CMake, Azure DevOps, GitHub Actions, and all the other fun tools that get thrown together to ship code</li>
+                <li>APIs people can understand, useful telemetry, and systems that someone besides the author can maintain</li>
             </ul>
 
+            <p>
+                I'm especially curious about applying AI to science and to the everyday work that still involves
+                too much friction. If you're building something interesting, I'd love to <a href="#contact">hear about it</a>.
+            </p>
         </section>
 
         <section id="contact">
@@ -105,47 +120,6 @@
             </h2>
         </section>
 
-        <section id="thissite">
-            <h1>About this site</h1>
-
-            <p>
-                <b>TL;DR:</b> I use <a href="https://github.com/cadars/john-doe">this repo</a> as a framework and Netlify to host.
-            </p>
-
-            <p>My goals were for the site to be simple, fast, and require no dependencies so I can make updates from anywhere.</p>
-
-            <p>
-                I came across <a href="https://john-doe.neocities.org/">this sample site for 'John Doe'</a> that is
-                implemented in a single HTML file with a CSS stylesheet. It has
-                no scripts and no dependencies and I can edit it on any machine with git and a text editor.
-            </p>
-
-            <p>The github repo I used as a template is <a href="https://github.com/cadars/john-doe">here</a>.</p>
-
-            <p>
-                My repo for the site is <a href="https://github.com/dylanclark/dylanclarkwebsite">here</a>. I've changed
-                some colors (and the content obviously) but otherwise used only what came with the template.
-            </p>
-
-            <p> I use the Netlify free tier which is a dead-simple hosting/deployment/DNS service. It's linked to the
-                GitHub repo, so a simple 'git push' to the master branch of my repo and the new edits are live!</p>
-
-            <h2>Steps to deploy your own site</h2>
-
-            <ul>
-               <li>Create a free Netlify account <a href="https://app.netlify.com/signup">here</a></li>
-                <li>Link your Netlify and GitHub accounts (<a
-                        href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/">instructions
-                        here</a>)</li>
-                <li>[optional] Connect a custom domain to netlify (<a
-                        href="https://docs.netlify.com/domains-https/custom-domains/">instructions here</a>)</li>
-                <li>Fork or copy the template from github (<a
-                        href="https://github.com/cadars/john-doe">https://github.com/cadars/john-doe</a>)</li>
-                <li>Edit the HTML and CSS as you see fit</li>
-                <li>git commit -am "my website is done!"</li>
-                <li>git push</li>
-            </ul>
-        </section>
         <!-- <section id="about">
             <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
 
